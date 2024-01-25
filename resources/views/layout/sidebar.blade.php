@@ -58,8 +58,60 @@
             </ul>
           </li>
         </ul>
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                SubCategory
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('subcategory.create')}}" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>SubCreate Category</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ url('subcategory')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>All  subCategory</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                post
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('post.create')}}" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>create post</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ url('post')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>All post</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </nav>
-      <!-- /.sidebar-menu -->
     </div>
-    <!-- /.sidebar -->
   </aside>
